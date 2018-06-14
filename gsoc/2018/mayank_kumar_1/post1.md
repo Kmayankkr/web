@@ -8,6 +8,8 @@ Note - Newcomers to this blog are advised to go through my previous year GSoC de
 
 My first task was to add a fully functioning component list for RCManager. The component list is a vital tool for navigating through huge component graphs. Each component is represented as a button in this list, which dynamically changes as and when new components are added or existing ones are removed. Following is a screenshot of the component list.
 
+![Component list in RCManager](images/post1_image1.png)
+
 On clicking a button, the RCManager automatically highlights/selects the corresponding component. Technically, it should also pan the main window to that component. Things seems to work quite well till here, but problems began as I started to implement the auto-pan feature.
 
 In order to appreciate the complexities of this feature, we need to understand the co-ordinate system used by Python Qt. On the main window, the user observes two things. 
